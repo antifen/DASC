@@ -1,7 +1,7 @@
 
 ## Mitosis detection in breast histopathology images via Difficulty-Aware Supervised Contrastive Learning
 
-##ABSTRACT
+## ABSTRACT
 Mitosis counting is an important indicator in the pathological diagnosis and histological grading of breast cancer. Currently, the counting of mitotic nuclei relies on pathologists manually reviewing whole slide images (WSI), which is time-consuming and susceptible to subjective biases. Due to the extreme class imbalance of nuclei types, large intra-class heterogeneity, and high inter-class similarity in breast pathology images, existing automated methods for mitosis detection struggle to achieve optimal results. Additionally, they inadequately address sample noise and hard sample learning, reducing detection robustness.
 In this paper, we propose a difficulty-aware supervised contrast learning classification framework based on the nucleus patch level (DASC). First, the difficulty and quantity of data are balanced by the negative sample search method (NS). Then, Dynamic Memory Units (DMU) and Difficulty Level Evaluation (DLE) are used to filter out simple samples, eliminate noisy samples, and subdivide and validate the difficulty levels of hard samples to obtain a clean and refined dataset. Finally, subclass-based difficulty grading-driven supervised contrastive learning (SDSCL) aims to address the issues of intra-class heterogeneity and inter-class similarity and optimize the learning of hard samples.
 
@@ -62,10 +62,10 @@ python DMU/hard_scl_main.py
 python predict.py
 ```
 
-####Acknowlegment
+#### Acknowlegment
 Many thanks to [UTS](https://github.com/cvblab/Mitosis-UTS)
 
-####Contact
+#### Contact
 If you have any question, please contact whd@guet.edu.cn.
 
 
