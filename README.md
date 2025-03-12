@@ -1,21 +1,19 @@
 
-## Navigating Challenges in Mitosis Detection: A Difficulty-Aware Learning Paradigm
+## Weakly-Supervised Navigating Challenges in Mitosis Detection: A Difficulty-Aware Learning Paradigm
 
 ## ABSTRACT
- Mitosis nuclei count is an important indicator for pathological diagnosis and histological grade of breast cancer. At present, it mainly
- relies on pathologists to manually review whole slide images (WSI), which is time-consuming, laborious, and subjective. Due to the
- extreme class imbalance of nuclei types, large intra-class heterogeneity, and high inter-class similarity in breast pathology images,
- existing automated methods for mitosis detection struggle to achieve optimal results. Additionally, they inadequately address
- sample noise and hard sample learning, reducing detection robustness. In this paper, we propose a Difficulty-Aware Supervised
- Contrastive Learning (DASC) classification framework based on the nuclei patch level. First, the difficulty and quantity of data
- are balanced by the Negative Sample Search (NS) method. Then, Dynamic Memory Units (DMU) and Difficulty Level Evaluation
- (DLE) are used to select simple samples, eliminate noisy samples, and subdivide and validate the difficulty levels of hard samples
- to obtain a clean and refined dataset. Finally, Subclass-based Difficulty-Driven Supervised Contrastive Learning (SDSCL) aims to
- address the issues of intra-class heterogeneity and inter-class similarity and optimize the learning of hard samples. Experimental
- results show that our method achieves state-of-the-art detection on ICPR2014, TUPAC2016, and MIDOG2021 breast pathology
- datasets. Furthermore, evaluation of the newly released GZMH-V2 dataset, a clinical dataset introduced by our team, demonstrates
- that our method surpasses several widely adopted classical detection approaches. The proposed method in this paper is a simple
- classification model that only uses point annotations, highlighting its potential application for breast cancer mitosis detection. 
+Mitosis nuclei count is an important indicator for breast cancer diagnosis and grading, currently relying on manual whole slide image 
+review by pathologists, which is time-consuming, labor-intensive, and subjective. Due to extreme class imbalance of nuclei types,
+intra-class heterogeneity, and inter-class similarity in breast pathology images, these data challenges hinder mitosis detection,
+with inadequate handling of sample noise and hard samples further reducing robustness. In this paper, we propose a  Weakly-Supervised
+Difficulty-Aware Learning (WS-DAL) framework based on the nuclei patch level. First, the difficulty and quantity of data are balanced 
+by the Negative Sample Search (NS) method. Then, Dynamic Memory Units (DMU) and Difficulty Level Evaluation (DLE) are used to select 
+simple samples, eliminate noisy samples, and subdivide and validate the difficulty levels of hard samples to obtain a clean and refined 
+dataset. Finally, Class-Stratified Difficulty-Guided Learning (CSDGL) aims to address the issues of intra-class heterogeneity and 
+inter-class similarity and optimize the learning of hard samples. Experimental results show that our method achieves state-of-the-art
+detection on the ICPR2014, TUPAC2016, and MIDOG2021 datasets, and surpasses several widely adopted classical detection approaches on
+the newly released clinical dataset GZMH-V2, introduced by our team. The proposed method in this paper is an easy-to-use classification 
+model that only uses weakly supervised point annotations, highlighting its potential application for breast cancer mitosis detection.
 
 #### Hardware
 
